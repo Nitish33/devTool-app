@@ -22,7 +22,13 @@ xattr -cr /Applications/DevTool.app
 
 (The app is always named `DevTool.app` there, with no version number, even though the `.dmg` you downloaded has one.)
 
-If you'd rather not type a path, or you're clearing this on a `.dmg` or a copy still in Downloads (which *does* have a version in its name): type `xattr -cr ` with a trailing space, then drag the file or app's icon from Finder into the Terminal window — it fills in the exact path for you — and press Return.
+**Haven't dragged it to Applications yet?** Clear it on the `.dmg` itself first, before opening it:
+
+```bash
+xattr -d com.apple.quarantine <path to the downloaded .dmg>
+```
+
+If you'd rather not type a path, type `xattr -d com.apple.quarantine ` (or `xattr -cr `) with a trailing space, then drag the `.dmg` or the app's icon from Finder into the Terminal window — it fills in the exact path for you — and press Return.
 
 We know this is a rough first step and are working on a properly notarized build, which won't need this.
 
