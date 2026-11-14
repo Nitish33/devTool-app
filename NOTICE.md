@@ -21,4 +21,4 @@ Both can be turned off remotely for all users by the developer at any time, and 
 
 ## Reporting a vulnerability
 
-If you've found a security issue, please do not open a public issue. Use GitHub's private [report a vulnerability](https://github.com/Nitish33/devToo-app/security/advisories/new) form instead.
+If you've found a security issue, please do not open a public issue. Use GitHub's private [report a vulnerability](https://github.com/Nitish33/devTool-app/security/advisories/new) form instead.

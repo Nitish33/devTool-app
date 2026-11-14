@@ -47,4 +47,4 @@ This Agreement is governed by the laws of <JURISDICTION>, without regard to its 
 
 ## 9. Contact
 
-For licensing questions, open an issue at https://github.com/Nitish33/devToo-app/issues. For a security report, use GitHub's private [report a vulnerability](https://github.com/Nitish33/devToo-app/security/advisories/new) form instead of a public issue.
+For licensing questions, open an issue at https://github.com/Nitish33/devTool-app/issues. For a security report, use GitHub's private [report a vulnerability](https://github.com/Nitish33/devTool-app/security/advisories/new) form instead of a public issue.
