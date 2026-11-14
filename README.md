@@ -8,12 +8,25 @@ This repository is the **download and support home** for DevTool. It does not co
 
 Grab the latest `.dmg` from [Releases](../../releases/latest).
 
+Open the `.dmg` and drag DevTool to Applications.
+
+### First launch (unsigned-for-distribution builds)
+
+This build isn't notarized by Apple yet, so macOS will refuse to open it and say it "could not verify DevTool is free of malware" — and **the usual fixes (double-click, right-click → Open, or Settings → Privacy & Security → Open Anyway) will not work for this particular warning.** That only works for a different, less strict category of unsigned app.
+
+To open it anyway, run this once in Terminal, then launch DevTool normally:
+
 ```bash
-# or, via Homebrew
-brew install --cask j1king/tap/devtool
+xattr -d com.apple.quarantine /Applications/DevTool.app
 ```
 
-Open the `.dmg` and drag DevTool to Applications. On first launch, macOS Gatekeeper may ask you to confirm you trust the developer — this is expected for apps outside the App Store.
+If that doesn't clear it:
+
+```bash
+xattr -cr /Applications/DevTool.app
+```
+
+We know this is a rough first step and are working on a properly notarized build, which won't need this.
 
 ### Requirements
 
