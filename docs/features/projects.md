@@ -30,6 +30,7 @@ Per-project choices.
 
 - **Name, path and default base branch**
 - **Editor override:** open this project in a different editor from your default
+- **Launch defaults:** the *before launching* lines and the Start, Android Studio and Xcode commands for every worktree of the project. A worktree can override them with its gear icon (see [Launch settings](worktrees.md#launch-settings))
 - **Danger zone:** remove the project from DevTool. Your repository is never deleted
 
 ![The Project Settings page including the IDE override and the danger zone](images/project-settings.webp)

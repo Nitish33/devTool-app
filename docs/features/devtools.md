@@ -4,7 +4,7 @@ One window per device: its live screen on the left and a sidebar of tools on the
 
 [← All features](../../README.md#features)
 
-**On this page:** [Live device screen](#live-device-screen) · [Finding and running tools](#finding-and-running-tools) · [Device switcher](#device-switcher) · [Mac usage](#mac-usage)
+**On this page:** [Live device screen](#live-device-screen) · [Finding and running tools](#finding-and-running-tools) · [Choosing a Metro](#choosing-a-metro) · [Device switcher](#device-switcher) · [Mac usage](#mac-usage)
 
 ## Live device screen
 
@@ -35,6 +35,16 @@ Dozens of tools, easy to reach.
 - **Only relevant tools:** the Redux, React Query, Navigation, Analytics and Remote Config tools appear only for projects that use them
 
 ![The search box with results, a greyed out tool, and running dots](images/tool-search.webp)
+
+## Choosing a Metro
+
+With several projects or branches running, each has its own Metro. The picker at the right of the header lists them all, as `:port · folder · device`.
+
+- **You choose, DevTool never switches for you.** The choice is remembered. With two or more Metros and no choice yet, the picker asks you to select one
+- **The app follows your pick.** Choosing a Metro points the app on this device at it and reloads: on an iOS simulator through the app's bundler setting (what *Configure Bundler* in the dev menu does), on Android through `adb reverse`. A **Point app at :port** button appears when the app is on a different Metro than the one chosen
+- **Tools stay with the app.** Debugging sessions connect to the Metro the app is actually on, and your pick decides which one the header and the tool list describe
+- Not supported: real iPhones (change the bundler address in the dev menu), and Android apps that reach Metro by an address other than `localhost`
+- Ports 8081 to 8099 and 19000 to 19006 are scanned
 
 ## Device switcher
 

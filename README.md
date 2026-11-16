@@ -35,7 +35,7 @@ Click any picture to read more, or pick an area:
 
 | Area | What's inside |
 |---|---|
-| [Worktrees](docs/features/worktrees.md) | Worktree list · One-click IDE launch · Search and keyboard navigation · Quick actions on each row · Create a worktree · Create from the clipboard · Deep links · Edit and delete |
+| [Worktrees](docs/features/worktrees.md) | Worktree list · One-click IDE launch · Search and keyboard navigation · Quick actions on each row · Create a worktree · Create from the clipboard · [Launch settings](docs/features/worktrees.md#launch-settings) · Deep links · Edit and delete |
 | [Projects](docs/features/projects.md) | Add a project · Switch and reorder · Project settings |
 | [GitHub and Jira](docs/features/integrations.md) | GitHub · Jira · Your credentials stay on your Mac |
 | [Settings](docs/features/settings.md) | General · Appearance · IDE · Worktree |
@@ -43,9 +43,10 @@ Click any picture to read more, or pick an area:
 | [Working with macOS](docs/features/system-integration.md) | Spotlight · Global shortcut and menu bar · Launch at login · In-app updates |
 | [Simulators, emulators and real devices](docs/features/devices.md) | Device list · Real phones · Device notes · Native logs window · Compare window |
 | [Quick bar](docs/features/quick-bar.md) | The bar · Screenshot · Screen recording · Review a recording · Deep links on the bar · Android navigation mode |
-| [Dev tools window](docs/features/devtools.md) | Live device screen · Finding and running tools · Device switcher · Mac usage |
+| [Dev tools window](docs/features/devtools.md) | Live device screen · Finding and running tools · [Choosing a Metro](docs/features/devtools.md#choosing-a-metro) · Device switcher · Mac usage |
 | [Dev tools: your app](docs/features/devtools-app.md) | Navigation · App state · Redux · React Query · Storage · Remote Config · Analytics · State snapshots · Images |
-| [Dev tools: debug and performance](docs/features/devtools-debug.md) | Network · Logs and console · Timers and listeners · React profiling · Performance · Image audit |
+| [Dev tools: debug and performance](docs/features/devtools-debug.md) | Network · WebView · UI tree · Logs and console · Timers and listeners · React profiling · Performance · Image audit |
+| [AI agents (MCP)](docs/features/agent.md) | Connect an agent · What it can see and do · Captures · Taps that cannot go wrong · Replay without the agent · Control and safety · [Adding test IDs](docs/features/test-ids.md) · [Flows and cassettes](docs/features/flows.md) |
 | [Dev tools: device](docs/features/devtools-device.md) | Device settings · Location · App data · Cookies and local storage · Deep links · Push notifications · Design tools · Design overlay · Builds · Data snapshots · Recording and screenshots · Permissions |
 | [Dev tools: computer and utilities](docs/features/devtools-computer.md) | Mac storage · Mac permissions · JSON viewer · JSON compare · Base64 · JWT |
 | [Small utilities](docs/features/utilities.md) | Opacity to hex · Color converter · Lorem ipsum |

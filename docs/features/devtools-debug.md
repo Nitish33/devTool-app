@@ -4,7 +4,7 @@ Find out what the app is doing, and why it is slow.
 
 [← All features](../../README.md#features)
 
-**On this page:** [Network](#network) · [Logs and console](#logs-and-console) · [Timers and listeners](#timers-and-listeners) · [React profiling](#react-profiling) · [Performance](#performance) · [Image audit](#image-audit)
+**On this page:** [Network](#network) · [WebView](#webview) · [UI tree](#ui-tree) · [Logs and console](#logs-and-console) · [Timers and listeners](#timers-and-listeners) · [React profiling](#react-profiling) · [Performance](#performance) · [Image audit](#image-audit)
 
 ## Network
 
@@ -19,13 +19,43 @@ Every request the app makes, like Chrome's Network panel.
 - **Throttle everything** with a random delay, and **throttle one request** with its own range
 - **Request editor window** for a request's mock and throttle together
 - **See what happened:** which requests were held, for how long, or answered by a mock
+- **Filter by kind** like Chrome's Network panel: Fetch/XHR, Doc, CSS, JS, Font, Img, Media, WS and Other (⌘-click to pick several), plus **Errors** and **Mocked**, each with a count
 - **Reconnects on its own** and puts your mocks and throttles back
+- **Older React Native** (before 0.83), which cannot report its requests to a debugger: they are noted from the app's JavaScript instead (requests made through `fetch` and XHR; images loaded by the native side are not seen)
 
 ![The Network tool with a request open](images/network.webp)
 
 ![The request editor with a mock response](images/network-mock.webp)
 
 ![The throttle setting with a delay range](images/network-throttle.webp)
+
+## WebView
+
+Debug a WebView inside the app, like Safari's inspector or Chrome's remote debugging, on an iOS simulator or an Android emulator or phone.
+
+- **Console:** what the page logs and throws, and a prompt that runs JavaScript in the page
+- **Network:** the same list as the Network tool, with the same kind filters, details, **mocks and throttles** (for the page's `fetch` and XHR)
+- **Messages:** every message between the app and the page (`ReactNativeWebView.postMessage` and what the app sends in) as a stack of cards with the JSON opened up, and a way to send one either way
+- **Window:** the page's `window` object as a tree you can open, edit and add to, and scripts you keep, run now, or run on every load
+- **Application:** cookies (add, edit, delete), local and session storage, IndexedDB and caches
+- **History:** back, forward, reload, go to an address, the pages visited, and on Android the WebView's back stack
+- **Elements:** an element inspector: the page's tree, **pick an element by touching the page on the device**, a highlight with margin, padding and size, its styles, computed styles, box and attributes (editable), and search by text, id, class or CSS selector
+- The app's WebView must be inspectable (`webviewDebuggingEnabled` in react-native-webview). A page allows one inspector at a time
+
+![The WebView Network tab, with a response opened as a JSON tree](images/webview-network.webp)
+
+![The WebView History tab with the pages seen since attaching](images/webview-history.webp)
+
+![The WebView Elements tab with the element picked on the device highlighted](images/webview-elements.webp)
+
+## UI tree
+
+The views of the app by **test ID, label and text**, with how much of each is in view. Choose **On screen**, **Everything** (including what is off screen in a long list) or **No test ID** (what can be pressed but cannot be asked for by name).
+
+- A way to **scroll to** a view and to **tap** it, which is what an agent does: the view is brought into view first, and a tap only goes through when a touch would reach it
+- Type into a view, swipe, and press Home
+- Updates itself as you use the app
+- See [adding test IDs](test-ids.md) and [AI agents](agent.md)
 
 ## Logs and console
 

@@ -50,10 +50,23 @@ Hover a row to reach the things you do next.
 - **Terminal:** open a terminal in the worktree
 - **Finder:** reveal the folder
 - **Xcode and Android Studio:** shown when the project has native iOS or Android folders
-- **Run:** start the project's `start` script from `package.json` in a Terminal tab
+- **Run:** start the project's `start` script from `package.json` in a Terminal tab. If Metro is already on port 8081 it starts on the next free port, so a second branch never fights the first
+- **Launch settings (gear):** change what Run, Xcode and Android Studio do for this worktree. See [Launch settings](#launch-settings)
+- **Metro port:** a green `:8081` badge on the branch line shows which port the worktree's Metro is on, so with several projects running you can tell them apart
 - **More actions:** edit or delete the worktree
 
 ![A hovered worktree row showing its action icons](images/quick-actions.webp)
+
+## Launch settings
+
+Run, Xcode and Android Studio often need setup first: the right Node version, a `PATH`, `JAVA_HOME`. Set it once instead of every time.
+
+- **Gear icon on each worktree** opens a settings page (it scrolls, like Project Settings)
+- **Before launching:** lines that run first, one per line, such as `nvm use 20` or `export JAVA_HOME=...`. They run in your login shell, and a failing line stops the rest, with the error shown on the row
+- **Start, Android Studio and Xcode commands:** replace what the button does. Use `{path}` for the worktree folder and `{port}` for the Metro port. Leave a field empty to use the default, which is shown as its placeholder
+- **Metro port:** a port to start on, when you want a fixed one
+- **Defaults cascade:** the worktree's value, then the project's (in [Project settings](projects.md#project-settings)), then the built-in command. **Use default** clears one field and **Reset all** clears the page
+- Android Studio and Xcode started from here get the setup's environment, so they open with the right Node and Java. An editor that is already running keeps the environment it had; quit it first
 
 ## Create a worktree
 
