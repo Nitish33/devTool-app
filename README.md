@@ -10,7 +10,8 @@ Grab the latest `.dmg` from [Releases](../../releases/latest).
 
 Open the `.dmg` and drag DevTool to Applications.
 
-### First launch (unsigned-for-distribution builds)
+<details>
+<summary><b>First launch: macOS says it "could not verify DevTool is free of malware"? Click here.</b></summary>
 
 This build isn't notarized by Apple yet, so macOS will refuse to open it and say it "could not verify DevTool is free of malware" — and **the usual fixes (double-click, right-click → Open, or Settings → Privacy & Security → Open Anyway) will not work for this particular warning.** That only works for a different, less strict category of unsigned app.
 
@@ -31,6 +32,8 @@ xattr -d com.apple.quarantine <path to the downloaded .dmg>
 If you'd rather not type a path, type `xattr -d com.apple.quarantine ` (or `xattr -cr `) with a trailing space, then drag the `.dmg` or the app's icon from Finder into the Terminal window — it fills in the exact path for you — and press Return.
 
 We know this is a rough first step and are working on a properly notarized build, which won't need this.
+
+</details>
 
 ### Requirements
 
