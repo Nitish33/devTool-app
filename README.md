@@ -4,6 +4,12 @@ A native desktop app for managing git worktrees on macOS, with built-in device t
 
 This repository is the **download and support home** for DevTool. It does not contain the application's source code.
 
+## Open Dev tools
+
+Click the **dT** icon in the macOS menu bar, then choose **Open Dev tools**.
+
+<p align="center"><img src="docs/features/images/menu-bar-icon.png" alt="The dT icon in the macOS menu bar" width="200"></p>
+
 ## Features
 
 <p align="center">

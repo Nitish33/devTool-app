@@ -2,6 +2,10 @@
 
 One window per device: its live screen on the left and a sidebar of tools on the right.
 
+**To open it:** click the **dT** icon in the macOS menu bar, then choose **Open Dev tools**.
+
+<p><img src="images/menu-bar-icon.png" alt="The dT icon in the macOS menu bar" width="200"></p>
+
 [← All features](../../README.md#features)
 
 **On this page:** [Live device screen](#live-device-screen) · [Finding and running tools](#finding-and-running-tools) · [Choosing a Metro](#choosing-a-metro) · [Device switcher](#device-switcher) · [Mac usage](#mac-usage)

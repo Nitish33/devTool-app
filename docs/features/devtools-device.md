@@ -95,6 +95,10 @@ Compare a design with the real screen.
 - **Also on the device:** draw it over the simulator or emulator window itself
 - **Esc** stops the overlay
 
+<p align="center"><img src="images/design-overlay-demo.webp" alt="A design laid over the running app, compared by opacity, swipe and difference" width="320"></p>
+
+<p align="center"><sub>Opacity, swipe and difference on the same screen. <a href="images/design-overlay-demo.mp4">Watch it as a video</a>.</sub></p>
+
 ![A design laid over the device screen with the divider](images/design-overlay.webp)
 
 ## Builds
